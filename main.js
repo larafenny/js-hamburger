@@ -13,5 +13,10 @@ clickOpen.addEventListener('click', function () {
 });
 
 // creo costante clickClose che si riferisce alla classe fa-bars
-const clickClose = document.querySelector('.fa-bars');
+const clickClose = document.querySelector('.fa-times');
 
+// aspetto azione del click per scatenare l'evento di chiusura menu
+clickClose.addEventListener('click', function () {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    hamburgerMenu.style.display = 'none';
+});
